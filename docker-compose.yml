@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  my-first-app:
+    build: .
+    container_name: my-first-app
+    restart: unless-stopped
+    ports:
+      - "8080:3000"
